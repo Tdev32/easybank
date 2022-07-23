@@ -106,7 +106,7 @@ h1 {
   display: block;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 560px) {
   section {
     height: auto;
     text-align: center;

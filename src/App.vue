@@ -53,7 +53,7 @@ body {
   border-radius: 50px;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 560px) {
   .container {
     width: 80%;
   }

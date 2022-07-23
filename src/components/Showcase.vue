@@ -63,11 +63,11 @@ h1 {
   text-align: left;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 560px) {
   .showcase {
     grid-template-columns: 1fr;
     width: 100%;
-    height: 42rem; /* 44rem */
+    height: 42rem;
   }
   .desktop-shapes {
     display: none;
@@ -75,7 +75,7 @@ h1 {
   .mobile-shapes {
     position: absolute;
     display: block;
-    width: 100%; /* 200% */
+    width: 100%;
     top: -3%;
     right: 0%;
   }
@@ -86,7 +86,7 @@ h1 {
     right: 5%;
   }
   .info {
-    transform: translateY(64%);
+    transform: translateY(80%);
     margin: 0;
     text-align: center;
   }
