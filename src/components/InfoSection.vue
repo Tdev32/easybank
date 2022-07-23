@@ -52,7 +52,9 @@ export default {
 
 <style scoped>
 section {
+  position: relative;
   overflow: auto;
+  z-index: 8;
   height: 36rem;
   background-color: hsl(220, 16%, 96%);
 }
@@ -70,6 +72,28 @@ h1 {
 .flex {
   display: flex;
   justify-content: space-between;
+}
+
+@media only screen and (max-width: 375px) {
+  section {
+    height: auto;
+    text-align: center;
+  }
+  h1 {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .heading {
+    margin-top: 2rem;
+    margin-left: 0;
+  }
+  .heading > p {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .flex {
+    flex-direction: column;
+  }
 }
 
 </style>

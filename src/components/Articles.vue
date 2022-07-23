@@ -106,4 +106,18 @@ h1 {
   display: block;
 }
 
+@media only screen and (max-width: 375px) {
+  section {
+    height: auto;
+    text-align: center;
+  }
+  .cards {
+    flex-direction: column;
+  }
+  .card {
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+}
+
 </style>

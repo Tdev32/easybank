@@ -4,7 +4,7 @@
       <div class="logo">
         <img src="../assets/logo.svg" alt="">
       </div>
-      <nav class="flex">
+      <nav class="nav flex">
         <a href="">Home</a>
         <a href="">About</a>
         <a href="">Contact</a>
@@ -50,6 +50,12 @@ a {
   font-size: 0.9rem;
   color: gray;
   text-decoration: none;
+}
+
+@media only screen and (max-width: 375px) {
+  .nav, .btn {
+    display: none;
+  }
 }
 
 </style>

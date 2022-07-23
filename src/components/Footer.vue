@@ -95,5 +95,31 @@ p {
   color: gray;
 }
 
+@media only screen and (max-width: 375px) {
+  section {
+    height: auto;
+    text-align: center;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .menu {
+    margin: 0;
+    height: auto;
+    flex-wrap: nowrap;
+  }
+  .social-icons {
+    width: 10rem;
+    margin: 1rem auto;
+  }
+  .button {
+    margin: 2rem auto;
+    text-align: center;
+  }
+  p {
+    margin-top: 2rem;
+  }
+}
+
 
 </style>

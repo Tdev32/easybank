@@ -52,4 +52,13 @@ body {
   padding: 10px 22px;
   border-radius: 50px;
 }
+
+@media only screen and (max-width: 375px) {
+  .container {
+    width: 80%;
+  }
+  html, body {
+    width: 100%;
+  }
+}
 </style>

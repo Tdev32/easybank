@@ -8,7 +8,8 @@
       <button class="btn">Request Invite</button>
     </div>
     <div class="stuff">
-      <img class="shapes" src="../assets/bg-intro-desktop.svg" alt="">
+      <img class="desktop-shapes" src="../assets/bg-intro-desktop.svg" alt="">
+      <img class="mobile-shapes" src="../assets/bg-intro-mobile.svg" alt="">
       <img class="phones" src="../assets/image-mockups.png" alt="">
     </div>
   </div>
@@ -37,22 +38,57 @@ h1 {
   font-weight: 500;
 }
 
-.shapes {
+.mobile-shapes {
+  display: none;
+}
+
+.desktop-shapes {
   position: absolute;
-  top: -35%;
-  right: -35%;
+  width: 84%;
+  top: -25%;
+  right: -28%;
 }
 
 .phones {
   position: relative;
+  width: 100%;
   z-index: 10;
-  top: -22%;
-  right: -22%;
+  top: -13%;
+  right: -14%;
 }
 
 .info {
   transform: translateY(16%);
   margin-left: 170px;
   text-align: left;
+}
+
+@media only screen and (max-width: 375px) {
+  .showcase {
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: 42rem; /* 44rem */
+  }
+  .desktop-shapes {
+    display: none;
+  }
+  .mobile-shapes {
+    position: absolute;
+    display: block;
+    width: 100%; /* 200% */
+    top: -3%;
+    right: 0%;
+  }
+  .phones {
+    position: absolute;
+    width: 90%;
+    top: -13%;
+    right: 5%;
+  }
+  .info {
+    transform: translateY(64%);
+    margin: 0;
+    text-align: center;
+  }
 }
 </style>
